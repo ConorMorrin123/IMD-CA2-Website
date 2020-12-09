@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CA2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 Links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bootstrap 4 Glyphicon Icons link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <!-- Style for many components of teh html page -->
+  <style>
+    .nav {
+      position: fixed;
+    }
+
+    .MeImage {
+      float: left;
+      padding-left: 50px;
+    }
+
+    .MeText {
+      float: left;
+
+    }
+
+    .JavaImage {
+      float: left;
+      padding-left: 80px;
+    }
+
+    .SQLImage {
+      float: left;
+      padding-left: 80px;
+    }
+
+    .CiscoImage {
+      float: left;
+      padding-left: 80px;
+    }
+
+    .AboutMeText {
+      float: left;
+      padding-top: 20px;
+    }
+
+    .MyCVButton {
+      float: left;
+    }
+
+    .ContactMeButton {
+      float: left;
+      padding-left: 20px;
+    }
+
+    .ProjectOneHeading {
+      text-align: left;
+    }
+
+    .ProjOne {
+      float: left;
+      padding-left: 0px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .ProjOneText {
+      float: left;
+    }
+
+    .ProjTwo {
+      float: left;
+      padding-left: 5px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .ProjectTwoHeading {
+      text-align: left;
+    }
+
+    .ProjTwoText {
+      float: left;
+
+    }
+
+    .WorkExpericeHeading {
+      text-align: left;
+    }
+
+    .ES {
+      float: left;
+      padding-left: 100px;
+    }
+
+    .HS {
+      float: left;
+      padding-left: 100px;
+    }
+
+    .EStext {
+      float: left;
+    }
+
+    .HStext {
+      float: left;
+    }
+
+    .BackTopButton {
+      padding-top: 30px;
+      padding-bottom: 5px;
+    }
+  </style>
+
+  <script>
+    //Script for button to display more text or less text
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      var dots = document.getElementById("dots2");
+      var moreText = document.getElementById("more2");
+      var btnText = document.getElementById("myBtn2");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "inline";
+      }
+    }
+
+    // Function to Bring to top of page when clicked
+    function topFunction() { 
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+  </script>
+</head>
+
+<body>
+  <!-- Bootstrap 4 Navigation Bar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#conormorrin">Conor Morrin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+                                                    <!-- Example Of Glyphicon use -->
+          <a class="nav-link" href="#aboutme">About <i class="fas fa-user-check"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education <i class="fas fa-university"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects <i class="fas fa-pencil-alt"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#WorkExperice">Work Expirenece <i class="fas fa-building"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact Me <i class="fas fa-phone"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Resources.html">Resources</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Container for whole page  -->
+  <div class="container" style="margin-top:30px">
+    <div class="row">
+      <!-- Rows for both Conor Morrin and About Pages  -->
+      <div class="col-sm-4">
+        <a id="conormorrin">
+          <h2>Conor Morrin</h2>
+        </a>
+        <h5>Photo of me:</h5>
+        <div class="MeImage">
+          <img src="images/Me.jpg" class="rounded-circle" alt="profile-picture">
+        </div>
+        <div class="MeText">
+          <p>I am 20 years of age. I am a hard working individual who is looking
+            to gain new skills and grow as a person in the world of IT.
+          </p>
+        </div>
+        <hr class="d-sm-none">
+      </div>
+      <div class="col-sm-8">
+        <a id="aboutme">
+          <h2>About Me</h2>
+        </a>
+        <div class="JavaImage">
+          <img src="images/Java.jpg" class="rounded" alt="Java Icon" width="150" height="150">
+        </div>
+        <div class="SQLImage">
+          <img src="images/SQL.jpg" class="rounded" alt="SQL Icon" width="150" height="150">
+        </div>
+        <div class="CiscoImage">
+          <img src="images/Cisco.png" class="rounded" alt="Cisco Icon" width="150" height="150">
+        </div>
+        <div class="AboutMeText">
+          <p>I have been involved with many projects within college studying my degree in Computing with IT Management.
+            I have great customer experience from my part-time job. I am looking for an opportunity in an IT company to
+            further my knowledge to get a better understanding of the area I will be working in.
+            I have good Java and SQL and Networking experience from my time in college.</p>
+          <br>
+        </div>
+        <div class="MyCVButton">
+          <!-- Link to Word doc of CV at my Sharepoint in college -->
+          <a href="https://tudublin-my.sharepoint.com/:w:/r/personal/x00146070_mytudublin_ie/Documents/Semester%204/ConorMorrin.docx?d=w2bfc0f8538304515ac4d209ab96e3036&csf=1&web=1&e=ezrjXl"
+            target="_blank">
+            <button type="button" class="btn btn-primary" data-toggle="#" data-target="#myModal">
+              My CV
+            </button>
+          </a>
+        </div>
+        <!-- Contact Me Modal Button  -->
+        <div class="ContactMeButton">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Contact Me
+          </button>
+        </div>
+
+        <!-- Modal HTML  -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Contact Me</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="modal-body mx-3">
+                  <div class="form-group">
+                    <label for="email">
+                      Email: <i class="fas fa-envelope-square"></i></label>
+                    <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="name">
+                      Message: <i class="fas fa-comment-alt"></i></label>
+                    <textarea class="form-control" type="textarea" name="message" id="message"
+                      placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                  </div>
+
+                  <div class="md-form mb-4">
+                    <p> <b> My Email: </b> conormorrin232323@gmail.com</p>
+                    <p> <b> Phone: </b> 0851042684</p>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Send</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button to top of the page -->
+    <div class="BackTopButton">
+      <button onclick="topFunction()" type="button" class="btn btn-warning" id="myBtn" title="Go to top"><i
+          class="fas fa-chevron-up"></i></button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- Rows for Education Page  -->
+        <div class="col-sm-6">
+          <a id="education">
+            <h2>Education</h2>
+          </a>
+          <h5>Bacholor Degree in IT Management (Hrs Level)</h5>
+
+          <p>I am a confident and hardworking student studying Computer Science with IT Management (Hrs). I studied at
+            Technology University Tallahgt Campus. I have worked
+            on many team orientated projects during my studies and I am ready to demonstrate my skills in a work
+            environment. I have many skills in key areas such as Networking, Data Management and Web Design.
+          </p>
+          <hr class="d-sm-none">
+        </div>
+
+        <div class="col-sm-6">
+          <a id="education">
+          </a>
+          <!-- Image link for TUD page  -->
+          <a href="https://www.it-tallaght.ie/" target="_blank">
+            <img src="images/TUDublin.jpg" class="ES" alt="Cisco Icon" width="600" height="250">
+          </a>
+          <hr class="d-sm-none">
+        </div>
+
+        <div class="col-sm-6">
+          <h2>My IT Skills</h2>
+          - Can build networks using PC’s, switches, and routers
+          <br>
+          - Can configure routers and switches
+          <br>
+          - Private Cloud Architecture
+          <br>
+          - Can configure networks with RIPv2 & OSPF protocols
+          <br>
+          - Can construct & deconstruct computing hardware
+          <br>
+          - Used cloud experiences like Azure Dev ops
+          <br>
+          - Script using Python and PowerShell
+          <br>
+        </div>
+        <div class="col-sm-6">
+          <h2>
+            <br>
+          </h2>
+          - Confident Python and Web developer
+          <br>
+          - Can write SQL at Intermediate level using Oracle 11G
+          <br>
+          - Can create and design database ERD’s
+          <br>
+          - Interactive Media Design & Visualization
+          <br>
+          - Have a strong understanding of ITIL framework
+          <br>
+          - Can Virtualize Network Components
+          <br>
+          - Can configure Firewalls
+          <br>
+        </div>
+
+        <div class="col-sm-12">
+          <h2>My Results</h2>
+
+          <!-- Accordian Collapse for Results  -->
+          <div id="accordion">
+
+            <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  Year Four (Currently studying)
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  - Enterprise Performance Architecture
+                  <br>
+                  - Security for Cloud and the Internet of Things
+                  <br>
+                  - Private Cloud Architecture
+                  <br>
+                  - Interactive Media Design & Visualization
+                  <br>
+                  - Social Media Analysis
+                  <br>
+                  - Information Management
+                  <br>
+                  - 4th Year Project (Virtual Private Networks)
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                  Year Three <b> GPA: (2.83)</b>
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  - Advanced Routing & Switching Essentials <b> (B) </b>
+                  <br>
+                  - Big Data Technology <b> (B) </b>
+                  <br>
+                  - Networking 3 <b> (B) </b>
+                  <br>
+                  - Server-Side Web Development <b> (B-) </b>
+                  <br>
+                  - Cloud Services & Distributed Computing <b> (B-) </b>
+                  <br>
+                  - Operating Systems <b> (C+) </b>
+                  <br>
+                  - Innovation & Enterprise <b> (B) </b>
+                  <br>
+                  - Work Experience (Enterprise Solutions Ltd.)
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                  Year Two <b> GPA: (3.08)</b>
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  - Advanced Routing & Switching Essentials <b> (B) </b>
+                  <br>
+                  - Network Fundamentals <b> (B) </b>
+                  <br>
+                  - Information Security <b> (B-) </b>
+                  <br>
+                  - Discrete Mathematics 2 <b> (A) </b>
+                  <br>
+                  - Management Science <b> (A) </b>
+                  <br>
+                  - Software Quality Assurance & Session testing <b> (B+) </b>
+                  <br>
+                  - Project <b> (B) </b>
+                  <br>
+                  - Client-side Web Development <b> (B) </b>
+                  <br>
+                  - Advance Database Technologies <b> (C+) </b>
+                  <br>
+                  - IT Scripting & Automation <b> (C) </b>
+                  <br>
+                  - Data Administrative and Analysis <b> (B-) </b>
+                  <br>
+                  - Information Technology Service Management <b> (B) </b>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                  Year One <b> GPA: (2.92)</b>
+                </a>
+              </div>
+              <div id="collapseFour" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  - Object Oriented System Analysis <b> (B+) </b>
+                  <br>
+                  - Network Fundamentals <b> (B) </b>
+                  <br>
+                  - Computer Architecture <b> (B) </b>
+                  <br>
+                  - Discrete Mathematics 2 <b> (A) </b>
+                  <br>
+                  - Business & Information Systems <b> (B) </b>
+                  <br>
+                  - Discrete Mathematics <b> (B) </b>
+                  <br>
+                  - Statistics <b> (B) </b>
+                  <br>
+                  - Social Media Communications <b> (B) </b>
+                  <br>
+                  - Software Development 1 <b> (B-) </b>
+                  <br>
+                  - Software Development 2 <b> (B-) </b>
+                  <br>
+                  - Operating Systems Fundamentals <b> (B-) </b>
+                  <br>
+                  - Fundamentals of Interface and Web Design <b> (B-) </b>
+                  <br>
+                  - Learning to Learn at 3rd Level <b> (B-) </b>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button to top of the page -->
+          <div class="BackTopButton">
+            <button onclick="topFunction()" type="button" class="btn btn-warning" id="myBtn" title="Go to top"><i
+                class="fas fa-chevron-up"></i></button>
+          </div>
+
+          <!-- Container for Project page  -->
+          <div class="container" style="margin-top:30px">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="ProjectOneHeading">
+                  <a id="projects">
+                    <h2>Project 1</h2>
+                  </a>
+                  <div class="well element">
+                    <h3>Music Website Project (2nd Year)</h3>
+                  </div>
+                  <div class="ProjOne">
+                    <img src="images/MusicShop.png" class="img-thumbnail" alt="Cisco Icon" width="1000" height="500">
+                  </div>
+                  <div class="ProjOneText">
+                    <p>
+                      This was a team project that involved the project management and development of a fully functional
+                      website. Our website had many functionality’s
+                      like, the website could allow a user to register and
+                      account and add items to a basket using an internal database. We also implemented a user admin who
+                      could add and delete accounts.
+                      <br>
+                      <b> Challenges faced: </b>
+                      Allowing admins to add user accounts
+                      <br>
+                      <b> Technologies & Tools Used: </b>
+                      Play framework, Java, MySQL, Linux, HTTP, GitHub, Azure Dev ops
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="ProjectOneHeading">
+                  <a id="projects">
+                    <h2>Project 2</h2>
+                  </a>
+                  <div class="well element">
+                    <h3>Virtual Private Networks (4th Year)</h3>
+                  </div>
+                  <div class="ProjOne">
+                    <img src="images/VPN.png" class="img-thumbnail" alt="VPN Image" width="1000" height="750">
+                  </div>
+
+                  <!-- Project 2 has button that calls for the button function to expand and collapse text in script tags -->
+                  <div class="ProjTwoText">
+                    <p>
+                      I plan to use many different technologies and services for my project. I hope to get a good
+                      understanding of all the technology I use, and I hope to use them efficiently. I plan to use three
+                      VPN solutions that I will discuss further in the document. I will also discuss the various tools I
+                      will use to measure these VPNs to see which VPN out performs the other<span
+                        id="dots2">...</span><span id="more2"> <br> <br>
+                        <b> Technology List: </b> <br>
+                        <b> VPNs: </b> <br>
+                        • ZeroTier <br>
+                        • Pritunl Application with AWS (VM Creation) <br>
+                        • SoftEther <br>
+                        • WireGuard <br>
+                        <b> Testing Tools: </b><br>
+                        • Ookla Speed Tester <br>
+                        • DNS Leak Tester (dnsleaktest.com) <br>
+                        • IP Address Leak Test (IP Leak test for VPNs/Tor) <br>
+                        • WireShark <br>
+                        <b> Virtual Machines: </b><br>
+                        • Virtual Box <br>
+                        • Windows 10 Virtual Machine <br>
+                        • Windows 7 Virtual Machine <br>
+
+                      </span>
+                    </p>
+                    <button onclick="myFunction()" id="myBtn2" class="btn btn-info">Read more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button to top of the page -->
+            <div class="BackTopButton">
+              <button onclick="topFunction()" type="button" class="btn btn-warning" id="myBtn" title="Go to top"><i
+                  class="fas fa-chevron-up"></i></button>
+            </div>
+
+            <div class="WorkExpericeHeading" style="margin-top:30px">
+              <div class="row">
+                <div class="col-sm-12">
+                  <a id="WorkExperice">
+                    <h2>Work Experience</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Container for Work Expirence page  -->
+            <div class="container" style="margin-top:30px">
+              <div class="row">
+                <div class="col-sm-6" style="border:1px solid black;">
+                  <a href="https://enterprise-solutions.ie/" target="_blank">
+                    <img src="images/ES.png" class="ES" alt="Cisco Icon" width="400" height="250">
+                  </a>
+                  <div class="EStext">
+                    <p> - <b> Company Description: </b> Enterprise Solutions are a leading IT solutions provider
+                      specialising in
+                      Citrix consultancy and support, IT mobility, enterprise cloud, hosted desktop services, and IT
+                      infrastructure. <br> <br>
+                      - <b> Main Responsibilities: </b> <br>
+                      Managing and Auditing Ticketing System
+                      Managing our ConnectWise Ticketing System by assigning tickets to myself and other members of the
+                      IT team. <br>
+                      - I take on tickets and provide solutions with the customer by phone and using a
+                      remote desktop solution.
+
+                    </p>
+                  </div>
+                  <hr class="d-sm-none">
+                </div>
+                <div class="col-sm-6" style="border:1px solid black;">
+                  <a id="HomeStore">
+                    <a href="https://www.homestoreandmore.ie/" target="_blank">
+                      <img src="images/HS.png" class="HS" alt="Cisco Icon" width="400" height="250">
+                    </a>
+                    <div class="EStext">
+                      <p> - <b> Company Description: </b> Home Store & More is a home ware retail store. The store sells
+                        Home
+                        ware adn Outdoor equipement. <br> <br>
+
+                        <b> Main Responsibilities: </b> <br>
+                        - Customer Service
+                        by dealing with customers directly face to face to resolve problems they had within the store. I
+                        helped the store reach I high standard of customer service throughout Ireland.
+
+                      </p>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Button to top of the page -->
+            <div class="BackTopButton">
+              <button onclick="topFunction()" type="button" class="btn btn-warning" id="myBtn" title="Go to top"><i
+                  class="fas fa-chevron-up"></i></button>
+            </div>
+
+            <div class="WorkExpericeHeading" style="margin-top:30px">
+              <div class="row">
+                <div class="col-sm-12">
+                  <a id="Contact">
+                    <h2>Contact</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="container" style="margin-top:30px">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="MyDetails">
+                    <p>
+                      <b>Phone: </b>0851042684 <br>
+                      <b>Postal Address: </b>19 Forest Drive Kingswood, Tallaght Dublin 24 <br>
+                      <b>Email: </b>conormorrin232323@gmail.com
+                    </p>
+                  </div>
+                  <hr class="d-sm-none">
+                </div>
+                <div class="col-sm-6">
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                      <!-- Form for Contact page -->
+                      <h4>Contact Me</h4>
+                      <div class="form-group">
+                        <label for="name">
+                          Name: </label>
+                        <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">
+                          Email: <i class="fas fa-envelope-square"></i></label>
+                        <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                      </div>
+                      <div class="form-group">
+                        <label for="name">
+                          Message: <i class="fas fa-comment-alt"></i></label>
+                        <textarea class="form-control" type="textarea" name="message" id="message"
+                          placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                      </div>
+
+                      <button type="submit" class="btn btn-success">Submit</button>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button to top of the page -->
+            <div class="BackTopButton">
+              <button onclick="topFunction()" type="button" class="btn btn-warning" id="myBtn" title="Go to top"><i
+                  class="fas fa-chevron-up"></i></button>
+            </div>
+
+            <!-- Footer and Social Medias from one of my previous Website Projects -->
+            <div class="jumbotron text-center" style="margin-bottom:0">
+              <div class="footer">
+                <h4 style="text-align: left;">Social Media</h4>
+
+                <div id="SocialMedia" style="text-align: left;">
+                  <a href="https://www.facebook.com/conor.morrin.9" target="_blank"><img src="images/Facebook.png"
+                      alt="Facebook" style="width:2.5em;height:2.5em;"></a>
+                  <a href="https://www.instagram.com/conormorrin123/" target="_blank" target="_blank"><img
+                      src="images/Instagram.png" alt="Instagram" style="width:2.5em;height:2.5em;"></a>
+                  <a href="https://twitter.com/conor_morrin" target="_blank" target="_blank"><img
+                      src="images/Twitter.png" alt="Twitter" style="width:2.5em;height:2.5em;"></a>
+                </div>
+                <p style="font-style: italic;"> © Conor Morrin CV 2020</p>
+              </div>
+            </div>
+
+
+</body>
+
+</html>
